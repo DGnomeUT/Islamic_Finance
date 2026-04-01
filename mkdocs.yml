@@ -1,0 +1,113 @@
+site_name: Islamic Finance & Structuring — Executive Course
+site_description: A comprehensive executive course on Islamic finance, sukuk, and Shariah-compliant structuring for senior practitioners.
+site_author: Islamic Finance Executive Education
+site_url: https://example.github.io/islamic-finance-course/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tabs.link
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      title: On this page
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+
+nav:
+  - Home: index.md
+  - Modules:
+    - "Module 1: Foundations": module-01-foundations-of-islamic-finance/index.md
+    - "Module 2: IF vs Conventional": module-02-islamic-finance-vs-conventional-finance/index.md
+    - "Module 3: Contracts & Toolkit": module-03-core-islamic-contracts-and-structuring-toolkit/index.md
+    - "Module 4: Shariah Governance": module-04-shariah-governance-and-institutional-framework/index.md
+    - "Module 5: Banking & Treasury": module-05-islamic-banking-treasury-and-liquidity/index.md
+    - "Module 6: Sukuk & Capital Markets": module-06-sukuk-and-public-capital-markets/index.md
+    - "Module 7: Private Markets": module-07-islamic-finance-in-private-markets/index.md
+    - "Module 8: Case Studies": module-08-case-study-compendium/index.md
+    - "Module 9: Market Landscape": module-09-market-landscape-and-ecosystem/index.md
+    - "Module 10: Innovation & Debate": module-10-new-developments-innovation-and-debate/index.md
+    - "Module 11: Product Development": module-11-product-development-and-opportunity-mapping/index.md
+    - "Module 12: Executive Toolkit": module-12-executive-toolkit/index.md
+  - Essential Reading List: essential-reading-list.md

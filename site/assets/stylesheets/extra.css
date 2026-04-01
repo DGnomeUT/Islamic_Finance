@@ -1,0 +1,136 @@
+/* ── Executive Course — Custom Styles ── */
+
+:root {
+  --md-primary-fg-color: #00695c;
+  --md-accent-fg-color:  #ffb300;
+}
+
+/* Hero banner on home page */
+.hero-banner {
+  background: linear-gradient(135deg, #004d40 0%, #00695c 60%, #00897b 100%);
+  color: #fff;
+  padding: 4rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.hero-banner h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+  color: #fff;
+}
+
+.hero-banner p {
+  font-size: 1.15rem;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  opacity: 0.92;
+}
+
+.hero-banner .btn {
+  display: inline-block;
+  background: #ffb300;
+  color: #1a1a1a;
+  padding: 0.65rem 1.6rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0.3rem;
+  transition: background 0.2s;
+}
+
+.hero-banner .btn:hover { background: #ffc72c; }
+
+/* Module card grid */
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.module-card {
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 8px;
+  padding: 1.25rem 1.4rem;
+  background: var(--md-default-bg-color);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.module-card:hover {
+  box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
+}
+
+.module-card h3 { margin: 0 0 0.4rem; font-size: 1rem; }
+.module-card p  { margin: 0; font-size: 0.88rem; opacity: 0.8; }
+
+/* Executive Refresher box */
+.executive-refresher {
+  border-left: 4px solid var(--md-primary-fg-color);
+  background: color-mix(in srgb, var(--md-primary-fg-color) 8%, transparent);
+  padding: 1.1rem 1.4rem;
+  border-radius: 0 6px 6px 0;
+  margin: 1.8rem 0;
+}
+
+.executive-refresher h3 {
+  margin: 0 0 0.6rem;
+  color: var(--md-primary-fg-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Knowledge Check Quiz */
+.quiz-section {
+  border: 1px solid var(--md-accent-fg-color);
+  border-radius: 8px;
+  padding: 1.4rem 1.6rem;
+  margin: 2rem 0;
+  background: color-mix(in srgb, var(--md-accent-fg-color) 6%, transparent);
+}
+
+.quiz-section h3 {
+  margin: 0 0 1rem;
+  color: var(--md-accent-fg-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.quiz-section ol { padding-left: 1.2rem; }
+.quiz-section li { margin-bottom: 0.6rem; }
+
+details.quiz-answer {
+  margin-top: 0.3rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 4px;
+  padding: 0.4rem 0.8rem;
+}
+
+details.quiz-answer summary {
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: var(--md-primary-fg-color);
+}
+
+/* Admonition tweaks */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: #00897b;
+}
+
+/* Reading list */
+.reading-list table th {
+  background: var(--md-primary-fg-color);
+  color: #fff;
+}
+
+/* Responsive hero text */
+@media (max-width: 600px) {
+  .hero-banner h1 { font-size: 1.7rem; }
+  .hero-banner p  { font-size: 1rem; }
+}
